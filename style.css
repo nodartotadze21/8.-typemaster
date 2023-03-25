@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+body {
+    background: #F2F2F2;
+    padding: 24px;
+    font-family: 'Barlow';
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header button {
+    background: #E8EFF2;
+    border-radius: 8px;
+    padding: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #162542;
+}
+.section1 { 
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+}
+.section1-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.section1-text h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #162542;
+}
+.section1-text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7B8BAD;
+}
+.section1-button {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 37px;
+    margin-top: 43px;
+}
+.section1-button button {
+    background: #F16718;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 11px 14px 11px 14px;
+}
+.section1-button h1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #7B8BAD;
+}
+.section1-image-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.section1-image {
+    width:  372px;
+    height: 331px;
+    border-radius: 20px;
+    margin-top: 48px;
+}
+.section2 {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    min-width: 375px;
+}
+.pic-1 {
+    width: 144px;
+    height: 226px;
+    margin-left: -40px;
+    background: url(assets/mobile/image-phone-and-keyboard.jpg);
+    border-radius: 20px;
+}
+.pic-1-over { 
+    background: #F16718;
+    mix-blend-mode: multiply;
+    Width: 144px;
+    Height: 226px;
+    opacity: 0.85;
+    border-radius: 20px;  
+}
+.pic-2-over {
+    width: 220px;
+    height: 193px;
+    border-radius: 20px;
+}
+.section2-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+.section2-text h1 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #162542;
+}
+.section2-text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #7B8BAD;
+}
+.section3 {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    
+}
+.cont3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+}
+.rect {
+    width: 65px;
+    height: 65px;
+    background: #F16718;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section3-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.section3-text  h1 {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #162542;
+}
+.section3-text  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #7B8BAD;
+}
+footer {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer h1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7B8BAD;
+}
+
+@media screen and (min-width: 768px) {
+    .section1 {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    .section1-image {
+        width:  478px;
+        height: 425px;
+    }
+    .pic-1 {
+        width: 214px;
+        height: 320px;
+    }
+    .pic-1-over { 
+        width: 214px;
+        height: 320px;
+    }
+    .pic-2-over {
+        width: 445px;
+        height: 320px;
+    }
+    .section2-text {
+        flex-direction: row;
+        margin-top: 72px;
+    }
+    .section2-text h1 {
+        width: 255px;
+    }
+    .section2-text p {
+        width: 398px;
+    }
+    .section3 {
+        display: grid;
+        min-width: 768px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, 50%);
+    }
+    footer {
+        margin-top: 140px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 165px;
+    }
+    .section1 {
+       gap: 125px;
+       justify-content: space-between;
+    }
+    .section1-image {
+        width: 540px;
+        height: 480px;
+    }
+    .section1-text h1 {
+        font-size: 56px;
+        line-height: 56px;
+        width: 445px;
+    }
+    .section1-text p {
+        width: 445px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .section2 {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items:center;
+        gap: 15px;
+    }
+    .pic-1 {
+        margin-left: 0;
+    }
+    .section2-text {
+        flex-direction: column;
+            
+    }
+    .section3 {
+        margin-top: 130px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:baseline;
+        gap: 30px;
+    }
+    .section3-text {
+        width: 255px;
+    }
+    .back-pic2 {
+        position: absolute;
+        background-image: url(assets/shared/pattern-square.svg);
+        width: 255px;
+        height: 236px;
+        left: -120px;
+        top: 950px;
+    }
+
+
+} 
